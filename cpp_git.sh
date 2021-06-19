@@ -11,10 +11,10 @@ git status
 
 judg=n
 
-while ["$judg"="n"]
+while [ "$judg" = "n" ]
 do
-	echo "上記の内容でファイルをpushします。\n"
-	echo "よろしいですか？   ...   Y:yes / N:no\n"
+	echo "上記の内容でファイルをpushします。"
+	echo "よろしいですか？   ...   Y:yes / N:no"
 	read judg
 done
 

@@ -28,5 +28,3 @@ done
 
 git commit -m "Add a file"
 git push
-
-echo "ManatoYamaguchi"

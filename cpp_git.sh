@@ -1,12 +1,15 @@
 #!/bin/bash
 
+#cppディレクトリへの移動
+#cd ~/cpp
+
 #実行ファイルの削除
 rm a.out
 
 git add .
 git status
 
-judg='n'
+judg=$'n'
 
 while [$judg = 'n']
 do
@@ -17,3 +20,5 @@ done
 
 git commit -m "Add a file"
 git push
+
+cd ~/github

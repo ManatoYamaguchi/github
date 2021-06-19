@@ -16,14 +16,13 @@ do
 	echo "よろしいですか？   ...   Y:yes / N:no"
 	read judg
 
-	if [ "${judg}"="Y" ] || [ "${judg}"="y" ]; then
+	if [ "${judg}" == "Y" ] || [ "${judg}" == "y" ]; then
 		break
 
-	elif [ "${judg}"="N" ] || [ "${judg}"="n" ]; then
+	elif [ "${judg}" == "N" ] || [ "${judg}" == "n" ]; then
 		echo "ファイルのpushを中断します。"
 		#cd ~/cpp
 		exit 0
-
 	fi
 done
 

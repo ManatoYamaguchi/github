@@ -9,16 +9,23 @@ rm a.out
 git add .
 git status
 
-judg=n
+echo "上記の内容でファイルをpushします。"
 
-while [ "$judg" = "n" ]
+while [ 1 ]
 do
-	echo "上記の内容でファイルをpushします。"
 	echo "よろしいですか？   ...   Y:yes / N:no"
 	read judg
+
+	if [ "$judg"="Y" ] || [ "$judg"="y" ] ; then
+		break
+
+	elif [ "$judg"="N" ] || [ "$judg"="n" ] ; then
+		echo "ファイルのpushを中断します。"
+		#cd ~/cpp
+		exit 0
+
+	fi
 done
 
 git commit -m "Add a file"
 git push
-
-cd ~/github

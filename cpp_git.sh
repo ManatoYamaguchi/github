@@ -9,7 +9,8 @@ rm a.out
 git add .
 git status
 
-judg=[n]
+judg=n
+echo "$judg"
 
 while [$judg=[n]]
 do

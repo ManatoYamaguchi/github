@@ -10,9 +10,8 @@ git add .
 git status
 
 judg=n
-echo "$judg"
 
-while [$judg=[n]]
+while [$judg=n]
 do
 	echo "上記の内容でファイルをpushします。\n"
 	echo "よろしいですか？   ...   Y:yes / N:no\n"

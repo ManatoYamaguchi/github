@@ -11,15 +11,15 @@ git status
 
 echo "上記の内容でファイルをpushします。"
 
-while [ 1 ]
+while [ "1" ]
 do
 	echo "よろしいですか？   ...   Y:yes / N:no"
 	read judg
 
-	if [ "$judg"="Y" ] || [ "$judg"="y" ] ; then
+	if [ "${judg}"="Y" ] || [ "${judg}"="y" ] ; then
 		break
 
-	elif [ "$judg"="N" ] || [ "$judg"="n" ] ; then
+	elif [ "${judg}"="N" ] || [ "${judg}"="n" ] ; then
 		echo "ファイルのpushを中断します。"
 		#cd ~/cpp
 		exit 0

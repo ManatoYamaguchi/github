@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cd ~/cpp
+cd ~/cpp
 
 while [ "1" ]
 do

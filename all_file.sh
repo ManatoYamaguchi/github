@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #cppディレクトリへの移動
-#cd ~/cpp
+cd ~/cpp
 
 #実行ファイルの削除
 rm a.out
@@ -21,7 +21,7 @@ do
 
 	elif [ "${judg}" == "N" ] || [ "${judg}" == "n" ]; then
 		echo "ファイルのpushを中断します。"
-		#cd ~/cpp
+		cd ~/cpp
 		exit 0
 	fi
 done
